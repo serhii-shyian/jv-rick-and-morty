@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CharacterController {
     private final CharacterService characterService;
 
-    @GetMapping("/search")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
     @Operation(summary = "Get characters by names part",
             description = "Getting Rick and Morty characters by names part")

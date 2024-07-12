@@ -12,6 +12,6 @@ public interface CharacterRepository extends JpaRepository<Character, Long>,
         JpaSpecificationExecutor<Character> {
     List<Character> findByNameContaining(String name);
 
-    @Query("from Character ORDER BY RAND() limit 1")
+    @Query("FROM Character ORDER BY RAND() LIMIT 1")
     Character getRandomCharacter();
 }
